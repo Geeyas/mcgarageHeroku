@@ -1,0 +1,63 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Admin Panel</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a [routerLink]="['/home']" style="color:#05337e;">Home</a></li>
+                <li><button (click)="getData()">Admin Panel</button> </li>
+                <li><button [routerLink]="['/adminAccess']">Admin Access</button> </li>
+            </ol>
+        </div>
+    </nav>
+</div><!-- End Breadcrumbs -->
+<span id="errMsg">{{errorMessage}}</span>
+<div class="table" id="table">
+    <table>
+        <thead>
+            <th>ID</th>
+            <th> Full Name </th>
+            <th> Phone Number </th>
+            <th> Email </th>
+            <th> Appointment </th>
+            <th> Date &amp; Time </th>
+            <th>Time</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of allData">
+                <td>{{data.appointmentID}}</td>
+                <td>{{data.fullName}}</td>
+                <td>{{data.contactNum}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.appointment}}</td>
+                <td style="text-align: center;">{{data.onDate}}</td>
+                <td style="text-align: center;">{{data.onTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="delete">
+    <div class="col-lg-8">
+        <!-- <form> -->
+        <form action="https://formsubmit.co/bf540f3b9c3176cb36295b5ca0af7ee7" method="POST" role="form"
+            class="php-email-form" id="form">
+            <div class="row">
+                <div class="col-md-8 form-group">
+                    <input type="text" name="fullname" class="form-control" id="fullname"
+                        placeholder="Appointment ID to Delete" required [(ngModel)]="id">
+                    <button type="submit" class="deleteBtn" (click)="delete()">Delete &nbsp;<i
+                            class="bi bi-trash"></i></button>
+                    <button type="submit" class="deleteBtn" (click)="logOut()">&nbsp;Log Out &nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Login</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a [routerLink]="['/home']" style="color:#05337e;">Home</a></li>
+                <li>Login</li>
+            </ol>
+        </div>
+    </nav>
+</div><!-- End Breadcrumbs -->
+<section class="logging" id="login" *ngIf="isShowLogIn">
+    <div class="container" data-aos="fade-up">
+        <form>
+            <h2>Login</h2>
+            <div id="cont">
+
+                <div class="row gy-3">
+                    <div class="col-md-12" id="input">
+                        <input type="email" class="form-control" name="email" [(ngModel)]="username" (click)="clear()"
+                            placeholder="Email" required>
+                    </div>
+                    <div class="col-md-12" id="input">
+                        <input type="password" class="form-control" name="password" [(ngModel)]="password"
+                            (click)="clear()" placeholder="Password" required>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p style="color:red">{{messageErr}}</p>
+                        <p style="color:green">{{messageSucc}}</p>
+                        <button type="submit" (click)="login()">Login</button>
+                    </div>
+                    <div class="col-md-12 text-center" id="link">
+                        <a [routerLink]="['/signup']">Create Account</a><br>
+                        <a [routerLink]="['/forgotPassword']">Forgot Password</a><br>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<section id="login" class="logged" *ngIf="isShowLogOut">
+    <div class="container" data-aos="fade-up" style="margin-left: 37%;">
+        <div class="card card-cascade narrower" style="background-color: rgb(208, 224, 236);">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+                <img class="card-img-top" src={{userAvatar}} alt="User avatar">
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body card-body-cascade">
+                <!-- Title -->
+                <h4 class="font-weight-bold card-title" style="color: #05337e;">{{loggedUser}}</h4>
+                <h4 class="font-weight-bold card-title" style="color: #05337e;">{{loggedEmail}}</h4>
+                <!-- Button -->
+                <a class="btn btn-unique" style="background-color:#05337e; color:white;" (click)="logOut()">Log Out</a>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

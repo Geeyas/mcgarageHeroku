@@ -1,0 +1,239 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg')">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Customisation</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a [routerLink]="['/home']" style="color: #05337e">Home</a></li>
+                <li>Cusomisation</li>
+            </ol>
+        </div>
+    </nav>
+</div>
+<!-- End Breadcrumbs -->
+<main>
+    <div class="full_container">
+        <div>
+            <h1 *ngIf="suv">Suv</h1>
+            <div class="suv" id="suv" *ngIf="suv">
+                <div class="sketchfab-embed-wrapper" *ngIf="white">
+                    <iframe title="Volvo XC90" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/10f799e0228d4720837b10746fb7669b/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="green">
+                    <iframe title="Skoda Enyaq Coupe RS iV" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/a099126d9ee94f88a0644185066b0e9b/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="blue">
+                    <iframe title="Volvo C40 Recharge" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/1080df64d0ef420588e23ae073df1cb3/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="black">
+                    <iframe title="Jaguar I Pace 2022" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/a2b438e0184644319dde1d10f672a126/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="red">
+                    <iframe title="*FREE* Lowpoly Generic SUV" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/edc994ad28ed438cb365c0e0389ac177/embed?autostart=1&camera=0&transparent=1">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="yellow">
+                    <iframe title="Yellow Jeep" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/22a19e8cc47c4d8489f820b8529924ea/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+            </div>
+            <h1 *ngIf="sedan">Sedan</h1>
+            <div class="sedan" id="sedan" *ngIf="sedan">
+                <div class="sketchfab-embed-wrapper" *ngIf="white">
+                    <iframe title="Low Poly Car - BMW E30 1985 White" frameborder="0" allowfullscreen
+                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/9dea494b447e442fafbddfc7eccbf158/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="green">
+                    <iframe title="Green Luxury Sports Car" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/d3af9d9bbb83407fbf10946675521a4a/embed?autostart=1&camera=0&transparent=1">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="blue">
+                    <iframe title="Lada 2110 (110)" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/fb38174ee7b84fbdabef431aef08b454/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="black">
+                    <iframe title="Nissan GTRs (NFS Most Wanted Razor Version)" frameborder="0" allowfullscreen
+                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/841801d7a27a4e8fb266d2912b325563/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="red">
+                    <iframe title="VAZ-2170 *PRIORA*" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/c9000699de924988a7e299b3875bb39c/embed?autostart=1&camera=0&ui_hint=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="yellow">
+                    <iframe title="Muscle Car low poly" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/fa144705edf340fe977ef83ee9d2e908/embed?autostart=1&camera=0&transparent=1">
+                    </iframe>
+                </div>
+            </div>
+            <h1 *ngIf="hatch">Hatch</h1>
+            <div class="hatch" id="hatch" *ngIf="hatch">
+                <div class="sketchfab-embed-wrapper" *ngIf="white">
+                    <iframe title="Abarth 500 2008 | Low Poly" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/0ac313ea2feb4c5197f21b28051f75db/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="green">
+                    <iframe title="Hatchback01 Dirty Green" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/ccfe0af74f5948b7b6de3319be2a4055/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="blue">
+                    <iframe title="Volkswagen *ngIf3" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/87cb386ffe7d401ba41a0fb732926c89/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="black">
+                    <iframe title="British Compact '67 - Low poly model" frameborder="0" allowfullscreen
+                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/1269720ec7b84c899eac77c1d325141e/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="red">
+                    <iframe title="Volkswagen e-UP 2019" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/68ab1907e4234146b36e4871111090f1/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="yellow">
+                    <iframe title="Lancia Delta HF Integrale 1992" frameborder="0" allowfullscreen
+                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/ca8c43214ee34511ae4fb4c5067816ed/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+            </div>
+            <h1 *ngIf="pickup">Pick Up</h1>
+            <div class="pick-up iframe" *ngIf="pickup">
+                <div class="sketchfab-embed-wrapper" *ngIf="white">
+                    <iframe title="Ford F100 1976 Old White" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/7ebf141c5e0c4be890df4754a545d456/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="green">
+                    <iframe title="Ford Pickup F100" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/e0d8ce732c1443b9be8025cb96cef9b4/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="blue">
+                    <iframe title="Blue Pickup Truck" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/2fd1028c705543a3955ee59c1f1281a9/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="black">
+                    <iframe title="Ford F100 1976 New Black" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/cf7b924f51734eb0b85e98ecc40eddf2/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="red">
+                    <iframe title="Chevrolet C10 Silverado 1982 Red" frameborder="0" allowfullscreen
+                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/14dc604bbbac4e8b8196fa214d42a889/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+                <div class="sketchfab-embed-wrapper" *ngIf="yellow">
+                    <iframe title="Ford F100 1976 New Yellow" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/8f211537d3bb4d2a8635d62cb51375f7/embed?autostart=1&camera=0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="choice-section">
+            <div class="dropdown_container">
+                <select class="form-control dropdown" (change)="carModel($event)" name="carType" id="carType"
+                    [(ngModel)]="carType">
+                    <option value="suv">SUV(Sports Utility Vehicle)</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatch">Hatch</option>
+                    <option value="pickup">Pick-Up</option>
+                </select>
+            </div>
+            <div class="radio_button_section">
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="white" name="carType"
+                    value="white" class="form-control height_30px space" />
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="green" name="carType"
+                    value="green" class="form-control height_30px space" />
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="blue" name="carType"
+                    value="blue" class="form-control height_30px space" />
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="black" name="carType"
+                    value="black" class="form-control height_30px space" />
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="red" name="carType" value="red"
+                    class="form-control height_30px space" />
+                <input [(ngModel)]="carColor" (change)="color($event)" type="radio" id="yellow" name="carType"
+                    value="yellow" class="form-control height_30px space" />
+            </div>
+        </div>
+    </div>
+</main>
+<br />
+<app-footer></app-footer>

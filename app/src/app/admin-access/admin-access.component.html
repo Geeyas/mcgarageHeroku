@@ -1,0 +1,49 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Admin Panel</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a [routerLink]="['/home']" style="color:#05337e;">Home</a></li>
+                <li><button [routerLink]="['/admin']" style="color:#05337e;">Admin Panel</button> </li>
+                <li><button>Admin Access</button> </li>
+            </ol>
+        </div>
+    </nav>
+</div><!-- End Breadcrumbs -->
+<div id="containerAppoint">
+    <h2>Admin Accessibility</h2>
+    <div class="col-lg-8 fileds">
+        <form>
+            <div id="cont">
+                <div class=" form-group mt-3">
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email" (click)="clear()" id="name"
+                        placeholder="Admin Access email" required>
+                    <div id="errMessage">{{errMsgAdminAccess}}</div>
+                </div>
+                <div class="text-center">
+                    <button (click)="provideAccess()">Provide Admin Access</button>
+                    <br>
+                </div>
+                <div class=" form-group mt-3">
+                    <input type="text" class="form-control" name="emailRm" [(ngModel)]="emailRm" (click)="clear()"
+                        id="number" placeholder="Remove Admin Access" required>
+                    <div id="errMessage">{{errMsgAdminRm}}</div>
+                </div>
+                <div class="text-center">
+                    <button (click)="removeAccess()">Remove Admin Access</button>
+                    <br><br>
+                    <button (click)="logOut()">Log Out</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

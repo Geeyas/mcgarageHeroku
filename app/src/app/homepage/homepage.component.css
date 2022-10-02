@@ -1,0 +1,96 @@
+.carousel-inner .carousel-item img {
+    height: 700px;
+}
+
+.verticalbutton {
+    position: fixed;
+    top: 50%;
+    transform: rotate(90deg);
+    margin-left: -3%;
+}
+
+.verticalbutton button {
+    transition: 3s;
+    background-color: rgb(228, 150, 5);
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    width: 150px;
+    font-size: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.verticalbutton button a {
+    color: white;
+}
+
+.verticalbutton button a:hover {
+    transition: 2s;
+    color: #05337e;
+}
+
+.verticalbutton button:hover {
+    transition: 2s;
+    background-color: white;
+    border-radius: 20%;
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .verticalbutton button {
+        margin-left: -60px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .verticalbutton button {
+        margin-left: -90px;
+    }
+
+    .carousel-inner .carousel-item img {
+        height: 500px;
+    }
+
+    .verticalbutton {
+        position: fixed;
+        top: 50%;
+        transform: rotate(90deg);
+        margin-left: -2.5%;
+        size: 50px;
+    }
+
+    .verticalbutton button {
+        transition: 3s;
+        background-color: rgb(228, 150, 5);
+        border: none;
+        font-family: 'Oswald', sans-serif;
+        width: 150px;
+        font-size: 20px;
+        box-shadow: 5px 5px 20px black;
+
+    }
+
+    .verticalbutton button a {
+        color: white;
+    }
+
+    .verticalbutton button a:hover {
+        transition: 2s;
+        color: #05337e;
+    }
+
+    .verticalbutton button:hover {
+        transition: 2s;
+        background-color: white;
+        border-radius: 20%;
+    }
+}
+
+#ownerImg img {
+    border: 0px;
+    border-radius: 5%;
+}
+
+.img-fluid {
+    box-shadow: 10px 5px 10px black;
+}

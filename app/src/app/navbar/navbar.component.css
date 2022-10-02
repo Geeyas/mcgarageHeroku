@@ -1,0 +1,49 @@
+.dropdown .orderAutoPrts {
+    visibility: hidden;
+    /* hiding the dropdown menu from the online-order navigation button until cleint wants to add auto parts item on online order */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .hamburgerIcon {
+        padding-left: 60%;
+    }
+
+    #navbar ul {
+        position: absolute;
+        left: 20%;
+        top: 0px;
+        width: 305px;
+        height: 483px;
+    }
+
+    #navbar ul .get-a-quote {
+        width: auto;
+    }
+
+    #dropMenu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburgerIcon {
+        padding-left: 25%;
+    }
+
+    #navbar ul {
+        padding-left: -10%;
+        position: absolute;
+        top: 0px;
+        left: -46px;
+        width: 205px;
+        height: 465px;
+    }
+
+    #navbar ul .get-a-quote {
+        width: auto
+    }
+
+    #dropMenu {
+        display: none;
+    }
+}

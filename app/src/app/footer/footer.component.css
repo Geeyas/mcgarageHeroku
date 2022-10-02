@@ -1,0 +1,22 @@
+#usefulLinks ul li {
+    color: white;
+    list-style-type: none;
+    margin-bottom: 5%;
+    margin-left: -20%;
+}
+
+@media only screen and (max-width: 600px) {
+    #usefulLinks ul li {
+        margin-left: -9%;
+    }
+}
+
+#usefulLinks ul li a {
+    color: white;
+}
+
+#usefulLinks ul li a:hover {
+    color: grey;
+    font-size: 15px;
+    text-shadow: 0 0 10px black;
+}
